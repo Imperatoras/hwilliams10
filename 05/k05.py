@@ -1,4 +1,4 @@
-# Team SHWORM (Stella Oh, Helenda Williams, Renee Mui)
+# Team SHWORM (Stella Oh, Helena Williams, Renee Mui)
 # SoftDev
 # K05 -- Teamwork, but Better This Time
 # 2020-09-26
@@ -22,3 +22,5 @@ def pick_name(dictionary):
 
 #test-run of random name
 pick_name(KREWES)
+
+#python is super cool and it's really fun :)
