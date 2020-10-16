@@ -1,0 +1,14 @@
+The Blob Seizure Crew - Helena Williams, Ishita Gupta, Jessica Yeung
+SoftDev
+K13 -- Template for Success: the CSS gets worse. Helena's teammates cry.
+2020-10-15
+
+OUR NOTES:
+  - We had two different interpretations of how to handle Python-to-HTML transfer:
+    + Helena version: Create a str variable that holds a string of HTML code, return it with the template
+    + Ishita version: Use jinja to transfer the HTML code into the template, so it all comes out with the template
+  - Is there a difference? Which one is better?
+  - We (read: Helena) made almost everything a marquee, except the job selection, because it has that chaotic energy
+  - We investigated the <audio> tag, and are currently working to blast "I'm In Love With An E-Girl"
+  at all times on our website
+  - We found that you can return multiple things by concatenating them in return
