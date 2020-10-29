@@ -1,0 +1,18 @@
+Helena Williams
+SoftDev
+LJ00 -- chaptah uno notez
+2020-10-28
+
+Welcome to M001
+  - Welcome to MongoDB!
+  - Yulia Genkina - Presenter, curriculum engineer
+  - Course covers MongoDB, data organization, querying/writing, data modeling, and indexing.
+What is the MongoDB Database?
+  - MongoDB is a structured way to store+access data
+  - NoSQL database - doesn't use related table approach for data
+  - Document database
+What is a Document in MongoDB?
+
+What is MongoDB Atlas?
+
+Atlas User Interface Overview
