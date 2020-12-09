@@ -39,9 +39,14 @@ def authenticate():
     print(request.headers)
     fullResp = ""
     if(request.args.get("username")=="Mario"):
-        return "Hello, Mario! Waaaa hooo HAAAH<br>This was a get request!"  #response to a form submission
+        fullResp+="Hello, Mario! Waaaa hooo HAAAH! This was a get request!"  #response to a form submission
+        return render_template('response.html',response=fullResp,leResponsePage="la de daaaaaaaa")
+    elif(request.args.get("username")=="Luigi"):
+        fullResp+="GTFO LUIGI YOU DON'T GET TO KNOW THE REQUEST TYPE"
+        return render_template('response.html',response=fullResp,leResponsePage="la de daaaaaaaa")
     else:
-        return "you are "+request.args.get("username")+", not mario, go away.<br>You were sent here through a get request."
+        fullResp+="you are "+request.args.get("username")+", not mario, go away. You were sent here through a get request."
+        return render_template('response.html',response=fullResp,leResponsePage="sad not mario page")
 
 
 
