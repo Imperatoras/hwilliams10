@@ -37,11 +37,15 @@ def authenticate():
     #print(request.args['username'])
     print("***DIAG: request.headers ***")
     print(request.headers)
-    return "Waaaa hooo HAAAH"  #response to a form submission
+    fullResp = ""
+    if(request.args.get("username")=="Mario"):
+        return "Hello, Mario! Waaaa hooo HAAAH<br>This was a get request!"  #response to a form submission
+    else:
+        return "you are "+request.args.get("username")+", not mario, go away.<br>You were sent here through a get request."
 
 
-    
+
 if __name__ == "__main__": #false if this file imported as module
     #enable debugging, auto-restarting of server when this file is modified
-    app.debug = True 
+    app.debug = True
     app.run()
