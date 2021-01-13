@@ -12,3 +12,6 @@ HOW2CSS:
 Inline - In an HTML tag, put in style="" to start adding things. All the CSS pairs go in between the quotation marks!
 Internal - In the head region, use the <style> tags to demarcate an area that basically acts like a built in stylesheet. Much faster than inline, and much easier to edit.
 External - Create a .css file, and link to it in the head of the HTML file. Allows you to apply the same styling to multiple pages, and is just COOL :)
+
+OUR LOREM SOURCE:
+https://pirateipsum.me/#scrollstop
