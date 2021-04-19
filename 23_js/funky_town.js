@@ -68,15 +68,30 @@ console.log(gcd(55, 88)); // 11
 
 
 //Develop, then implement randomStudent(), which returns a randomly selected name from a list.
-var randomstudentlist = [];
+var randomStudentList = new Array(0);
 
-function randomstudent() {
-    
-    randomnumber = Math.floor(Math.random() * randomstudentlist.length());
+function randomStudent() {
+
+    randomNumber = Math.floor(Math.random() * randomStudentList.length);
+    return(randomStudentList[randomNumber])
 
 }
 //You may want to create helper functions or external list variables here.
-function addstudent() {
-    
+function addStudent(frist, lsat) {
+  newRSL = new Array(randomStudentList.length + 1);
+  for(i = 0; i < randomStudentList.length; i++){
+    newRSL[i] = randomStudentList[i];
+  }
+  newTerm = new Array(frist, lsat);
+  newRSL[newRSL.length - 1] = newTerm
+  randomStudentList = newRSL;
+  return(randomStudentList)
 }
+
+console.log(addStudent("h", "dubz"));
+console.log(addStudent("j", "lee"));
+console.log(addStudent("dingus", "macgee"));
+console.log(randomStudent());
+console.log(randomStudent());
+console.log(randomStudent());
 //Do whatever you think is needed. Think: S I M P L E.   Think: S M A R T.
