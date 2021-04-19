@@ -1,25 +1,5 @@
-/*
-   your PPTASK:
-   
-   Test drive each bit of code in this file,
-    and insert comments galore, indicating anything
-     you discover,
-    	have questions about,
-    		or otherwise deem notable.
-    		
-    		Write with your future self or teammates in mind.
-    		
-    		If you find yourself falling out of flow mode, consult 
-    		other teams
-    		MDN
-
-   A few comments have been pre-filled for you...
-   
-   (delete this block comment once you are done)
-*/
-
-// Team Phantom Tollbooth :: Clyde "Thluffy" Sinclair, Fierce Dragon 
-// SoftDev pd0
+// Team unless? :: Helena Williams, Jonathan Lee
+// SoftDev pd1
 // K24 -- Getting more comfortable with the dev console and the DOM
 // 2021-04-15r
 // --------------------------------------------------
@@ -27,7 +7,7 @@
 
 //send diagnostic output to console
 //(Ctrl-Shift-J in Chromium & Firefox to reveal console)
-console.log("AYO");
+console.log("AYO"); //AYOOOOOOOO
 
 var i = "hello";
 var j = 20;
@@ -38,7 +18,7 @@ var f = function(x) {
   var j=30;
   return j+x;
 };
-
+// f(10) outputs 40
 
 //instantiate an object
 var o = { 'name' : 'Thluffy',
@@ -49,7 +29,10 @@ var o = { 'name' : 'Thluffy',
             return x+30;
           }
         };
-
+// yoooo o drops it in the console
+// o.func(10) outputs 40
+// o.age outputs 15
+// etc.
 
 //(define fact (lambda (n) ...)
 var fact = function(n) {
@@ -59,7 +42,7 @@ var fact = function(n) {
   }
   return prod;
 };
-
+// ah. factorials.
 
 //(define fact (lambda (n) ...)
 var factR = function(n) {
@@ -70,30 +53,36 @@ var factR = function(n) {
     return n * factR(n-1);
   }
 };
+// recursive factorial defn 
 
-
+// adding that item.
 var addItem = function(text) {
   var list = document.getElementById("thelist");
   var newitem = document.createElement("li");
   newitem.innerHTML = text;
-  list.appendChild(newitem);
+  list.appendChild(newitem); // remember appendChild
 };
+// YOOOO addItem("hi") adds hi to the actual list
+// kinda gameing
 
-
+// yeeting an item.
 var removeItem = function(n) {
   var listitems = document.getElementsByTagName('li');
   listitems[n].remove();
 };
+// 0 is the topmost item, etc. by id. yep.
 
-
+// yooo we can red 
 var red = function() {
   var items = document.getElementsByTagName("li");
   for(var i = 0; i < items.length; i++) {
     items[i].classList.add('red');
   }
 };
+// adds red to the items, so item 0 and 8 which have no colors turn red
+// the rest have colors so don't turn red, just added red
 
-
+// adds alternating red and blue
 var stripe = function() {
   var items = document.getElementsByTagName("li");
   for(var i = 0; i < items.length; i++) {
@@ -104,8 +93,11 @@ var stripe = function() {
     }
   }
 };
+// same standard as red-ing
 
-
+// button click puts this in console
+// here comes e...
+// here comes 'this' ...
 var buttonCallback = function(e) {
   console.log("\n\nhere comes e...");
   console.log(e);
@@ -113,6 +105,8 @@ var buttonCallback = function(e) {
   console.log(this);
 }
 
+// also posts MouseEvent log upon button click
+// because the button's id is "b", see below
 
 var b = document.getElementById('b');
 b.addEventListener('click', buttonCallback);
@@ -120,10 +114,15 @@ b.addEventListener('click', buttonCallback);
 
 var redCallback = function(e) {
   console.log("\n\n---redCallback invoked---")
-  console.log(this);
+  console.log(this); // wow this is cool, just throws itself in the console
   this.classList.add('red');
 }
 
+// this gets called whenever mouseover happens on an item
+// kinda weird behavior, doesn't change color on first hover,
+// turns red upon leaving, 
+// and green on 2nd hover
+// because it's mouseover and mouseout but the first mouseover is weird huh.
 var thelist = document.getElementById("thelist");
 var litems = thelist.children;
 for(var i = 0; i < litems.length; i++) {
