@@ -1,6 +1,6 @@
 // Team Dingus Skwaa (Maddy Andersen, Helena Williams)
 // SoftDev
-// K26: canvas based animation
+// K26: they lock us in the tower whenever we get caught - canvas based animation
 // 2021-05-05
 
 // model for HTML5 canvas-based js animation
